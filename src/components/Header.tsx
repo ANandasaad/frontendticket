@@ -1,12 +1,14 @@
 import React from "react";
 import { IoMdLock } from "react-icons/io";
 import { FaRegCircleQuestion } from "react-icons/fa6";
+import { logo } from "../assets";
 
 const Header = () => {
   return (
     <div>
       <div className=" flex items-center public-container justify-between bg-[#F9F9FB40] h-[72px] ">
-        <p className="text-5xl font-bold font-serif ">tickete</p>
+        <img src={logo} alt="logo" />
+
         <p className="flex items-center gap-2 text-xl text-gray-500">
           <IoMdLock className="text-2xl" />
           Checkout
