@@ -3,17 +3,19 @@ import { IoIosInformationCircle } from "react-icons/io";
 import { BiWorld } from "react-icons/bi";
 import { CiCreditCard1 } from "react-icons/ci";
 import { ImRadioChecked2 } from "react-icons/im";
-import { dinerclub, mastercard, visa } from "../assets";
+import { apple, dinerclub, google, mastercard, visa } from "../assets";
 import { FaPiggyBank } from "react-icons/fa6";
 import { CiCircleInfo } from "react-icons/ci";
 import { IoMdLock } from "react-icons/io";
+import { IoIosRadioButtonOff } from "react-icons/io";
+
 const Body = () => {
   return (
     <div className="">
       <div className="public-container  grid grid-cols-12 gap-4">
         <div className="col-span-7 ">
           <div className="flex flex-col gap-10">
-            <div className="row-span-2 border">
+            <div className="row-span-2 ">
               <div className="flex flex-col gap-7">
                 <div className=" items-start pb-7">
                   <p className="text-5xl font-serif ">Confirm & Pay</p>
@@ -31,9 +33,9 @@ const Body = () => {
                 </div>
               </div>
             </div>
-            <div className="border">
+            <div className="">
               <div className="flex flex-col gap-5">
-                <div className="flex flex-col gap-2 border">
+                <div className="flex flex-col gap-2 ">
                   <h3 className="text-2xl font-normal">Enter your details</h3>
                   <p className="py-3 text-gray-500 font-normal">
                     We'll be sending our tickets to the details below. Booking
@@ -88,7 +90,7 @@ const Body = () => {
             </div>
             <div className="">
               <div className="flex flex-col gap-5">
-                <div className="flex flex-col gap-2 border">
+                <div className="flex flex-col gap-2 ">
                   <h3 className="text-2xl font-normal">
                     Additional information
                   </h3>
@@ -139,7 +141,7 @@ const Body = () => {
               </div>
             </div>
             <div className="flex flex-col gap-5">
-              <div className="flex flex-col gap-2 border">
+              <div className="flex flex-col gap-2 ">
                 <h3 className="text-2xl font-normal">
                   Select your mode of payment
                 </h3>
@@ -147,7 +149,7 @@ const Body = () => {
                   Payments with Tickete are secure and encrypted.
                 </p>
               </div>
-              <div>
+              <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-7 border border-black py-3 px-3 rounded-2xl">
                   <div className="flex justify-between items-center">
                     <div className="flex items-center justify-between gap-3">
@@ -239,11 +241,56 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
-                <div>2</div>
-                <div>3</div>
+                <div className="flex items-center justify-between border py-5 px-5 rounded-xl bg-gray-50">
+                  <div className="flex items-center gap-3 ">
+                    <img
+                      src={apple}
+                      alt="apple pay"
+                      className="h-5 border rounded-md bg-gray-300 py-1 px-2"
+                    />
+                    <p className="text-gray-400">Coming soon</p>
+                  </div>
+                  <div className=" bg-gray-300 rounded-full">
+                    <IoIosRadioButtonOff className="text-2xl text-gray-300" />
+                  </div>
+                </div>
+                <div className="flex items-center justify-between border py-5 px-5 rounded-xl bg-gray-50">
+                  <div className="flex items-center gap-3 ">
+                    <img
+                      src={google}
+                      alt="apple pay"
+                      className="h-5 border rounded-md bg-gray-300 py-1 px-2"
+                    />
+                    <p className="text-gray-400">Coming soon </p>
+                  </div>
+                  <div className=" bg-gray-300 rounded-full">
+                    <IoIosRadioButtonOff className="text-2xl text-gray-300" />
+                  </div>
+                </div>
+              </div>
+              <hr></hr>
+            </div>
+            <div className="flex flex-col gap-3">
+              <div>
+                <h2 className="text-2xl">Total Payable: $XXX</h2>
+              </div>
+              <div className="flex items-start gap-3 py-3 px-4 border rounded-xl">
+                <div>
+                  <CiCircleInfo className="text-white bg-black rounded-full " />
+                </div>
+                <div>
+                  <div className="flex flex-col gap-2">
+                    <p className="font-normal">You will be charged in AED</p>
+                    <p className="text-sm text-gray-500">
+                      The price shown here is in US Dollar (USD) as per the
+                      current conversion rate. You will be charged in United
+                      Arab Emirates Dirham (AED).
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="">5</div>
+            <hr></hr>
           </div>
         </div>
         <div className="col-span-5 border">2</div>
