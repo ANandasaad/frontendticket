@@ -7,3 +7,8 @@ export { default as apple } from "./Vector.png";
 export { default as google } from "./google-pay-mono.png";
 export { default as illustrations } from "./About illustrations.png";
 export { default as rectangle } from "./Rectangle 65.png";
+export { default as mountains1 } from "./mountains1.jpeg";
+export { default as mountains } from "./mountains.jpeg";
+export { default as varanasi } from "./varansi.jpeg";
+export { default as lotusTemple } from "./lotusTemple.jpeg";
+export { default as paris } from "./paris.jpeg";

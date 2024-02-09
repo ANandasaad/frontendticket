@@ -15,7 +15,7 @@ const Body = () => {
     <div className="">
       <div className="public-container  md:grid grid-cols-12 gap-4 flex flex-col-reverse">
         <div className="col-span-8 ">
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-20">
             <div className="row-span-2 ">
               <div className="flex flex-col gap-7">
                 <div className=" items-start pb-7">
@@ -47,7 +47,7 @@ const Body = () => {
                 </div>
                 <div className=" flex flex-col gap-10">
                   <form>
-                    <div className="flex flex-col gap-3 md:flex-row ">
+                    <div className="flex flex-col gap-3 md:flex-col ">
                       <input
                         type="text"
                         placeholder="Full name *"

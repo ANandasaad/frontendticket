@@ -40,13 +40,13 @@ const FAQ = () => {
             </div>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <div className="flex items-center gap-4 border-2 border-gray-300 py-4 px-4 rounded-xl md:w-[690px] w-96">
+            <div className="flex items-center gap-4 border-2 border-gray-300 py-4 px-4 rounded-xl md:w-[690px] w-full">
               <p className="text-3xl text-gray-500">
                 <GoPlus />
               </p>
               <p>What should I do on my first trip to Rome?</p>
             </div>
-            <div className="flex  items-start gap-4 border-2 border-gray-300 py-4 px-4 rounded-xl md:w-[690px] w-96">
+            <div className="flex  items-start gap-4 border-2 border-gray-300 py-4 px-4 rounded-xl md:w-[690px] w-full">
               <div className="">
                 <p className="text-3xl text-gray-500">
                   <RxCross2 />
@@ -65,19 +65,19 @@ const FAQ = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4 border-2 border-gray-300 py-4 px-4 rounded-xl md:w-[690px] w-96">
+            <div className="flex items-center gap-4 border-2 border-gray-300 py-4 px-4 rounded-xl md:w-[690px] w-full">
               <p className="text-3xl text-gray-500">
                 <GoPlus />
               </p>
               <p>How much time should I spend in Rome?</p>
             </div>
-            <div className="flex items-center gap-4 border-2 border-gray-300 py-4 px-4 rounded-xl md:w-[690px] w-96">
+            <div className="flex items-center gap-4 border-2 border-gray-300 py-4 px-4 rounded-xl md:w-[690px] w-full">
               <p className="text-3xl text-gray-500">
                 <GoPlus />
               </p>
               <p>What food is Rome known for?</p>
             </div>
-            <div className="flex items-center gap-4 border-2 border-gray-300 py-4 px-4 rounded-xl md:w-[690px] w-96">
+            <div className="flex items-center gap-4 border-2 border-gray-300 py-4 px-4 rounded-xl md:w-[690px] w-full">
               <p className="text-3xl text-gray-500">
                 <GoPlus />
               </p>
