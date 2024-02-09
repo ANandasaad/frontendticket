@@ -1,4 +1,3 @@
-import React from "react";
 import { illustrations } from "../assets";
 import { GoPlus } from "react-icons/go";
 import { RxCross2 } from "react-icons/rx";

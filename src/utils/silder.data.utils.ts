@@ -1,5 +1,3 @@
-import { mountains1 } from "../assets";
-
 export const data = {
   slides: [
     {

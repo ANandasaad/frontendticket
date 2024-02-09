@@ -1,18 +1,8 @@
 import React, { useState } from "react";
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 
-import { GoDotFill } from "react-icons/go";
-
-interface Slide {
-  src: string;
-  alt: string;
-}
-
-interface CarouselData {
-  slides: Slide[];
-}
 export const Carousel = ({ data }: any) => {
   const [slide, setSlide] = useState(0);
 

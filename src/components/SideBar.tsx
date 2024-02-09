@@ -1,5 +1,3 @@
-import React from "react";
-import { rectangle } from "../assets";
 import { MdOutlineStar } from "react-icons/md";
 import { PiTicketFill } from "react-icons/pi";
 import { BsFillCalendar2Fill } from "react-icons/bs";
