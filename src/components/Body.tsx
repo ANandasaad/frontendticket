@@ -202,26 +202,26 @@ const Body = () => {
                   </div>
                   <div className="flex flex-col gap-5">
                     <div>
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center">
+                      <div className="flex md:items-center md:justify-between flex-col-reverse  md:flex-row md:gap-4 gap-4">
+                        <div className="flex items-center ">
                           <h3>Total payable:</h3>
                           <h3>$XXX</h3>
                         </div>
-                        <div className="flex items-center gap-2 bg-green-700 text-white  px-1 rounded-3xl">
+                        <div className="flex items-center gap-2 bg-green-700 text-white  px-1 rounded-3xl w-48">
                           <p>
                             <FaPiggyBank />
                           </p>
                           <p className="px-1">You save {"<price>"} </p>
                         </div>
                       </div>
-                      <div>
-                        <p className="flex items-center gap-1 font-normal text-sm text-gray-400">
+                      <div className="my-4">
+                        <p className="flex items-center gap-1  font-normal text-sm text-gray-400">
                           You will be charged in AED <CiCircleInfo />
                         </p>
                       </div>
                     </div>
-                    <div className="flex flex-col gap-4">
-                      <p className="text-sm text-gray-400 font-thin">
+                    <div className="flex flex-col gap-4 justify-center items-center md:items-start">
+                      <p className="text-sm text-gray-400 font-thin md:text-left ">
                         By clicking “confirm & pay”,
                         <a href="#">
                           <span className="text-blue-700 underline">
@@ -237,7 +237,7 @@ const Body = () => {
                           </span>{" "}
                         </a>
                       </p>
-                      <button className="flex items-center gap-4 bg-black w-52 text-white justify-center py-4 px-3 rounded-2xl">
+                      <button className="flex items-center  gap-4 bg-black md:w-52 w-full text-white justify-center py-4 px-3 rounded-2xl">
                         <IoMdLock className="text-2xl" />
                         Confirm & pay
                       </button>
