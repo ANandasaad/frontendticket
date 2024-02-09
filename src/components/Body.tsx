@@ -8,17 +8,20 @@ import { FaPiggyBank } from "react-icons/fa6";
 import { CiCircleInfo } from "react-icons/ci";
 import { IoMdLock } from "react-icons/io";
 import { IoIosRadioButtonOff } from "react-icons/io";
+import SideBar from "./SideBar";
 
 const Body = () => {
   return (
     <div className="">
-      <div className="public-container  grid grid-cols-12 gap-4">
-        <div className="col-span-7 ">
+      <div className="public-container  md:grid grid-cols-12 gap-4 flex flex-col-reverse">
+        <div className="col-span-8 ">
           <div className="flex flex-col gap-10">
             <div className="row-span-2 ">
               <div className="flex flex-col gap-7">
                 <div className=" items-start pb-7">
-                  <p className="text-5xl font-serif ">Confirm & Pay</p>
+                  <p className="text-5xl font-serif md:block hidden">
+                    Confirm & Pay
+                  </p>
                 </div>
                 <div className="px-3 border py-4 rounded-xl flex items-center justify-between bg-gray-50">
                   <div className="text-sm ">
@@ -44,13 +47,13 @@ const Body = () => {
                 </div>
                 <div className=" flex flex-col gap-10">
                   <form>
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 md:flex-row ">
                       <input
                         type="text"
                         placeholder="Full name *"
-                        className="border py-3 px-3 rounded-2xl"
+                        className="border py-3 px-3 rounded-2xl w-full"
                       />
-                      <div className="flex justify-between items-center gap-4">
+                      <div className="flex justify-between items-center gap-4 flex-col md:flex-row">
                         <div className="w-full border rounded-2xl py-3 px-3 text-gray-500">
                           <select
                             name=""
@@ -70,7 +73,7 @@ const Body = () => {
                           className="border py-3 px-3 rounded-2xl w-full"
                         />
                       </div>
-                      <div className="flex justify-between items-center gap-4 ">
+                      <div className="flex justify-between items-center  flex-col gap-4 md:flex-row">
                         <input
                           type="text"
                           placeholder="Email *"
@@ -100,8 +103,8 @@ const Body = () => {
                 </div>
                 <div className=" flex flex-col gap-10">
                   <form>
-                    <div className="flex flex-col gap-3">
-                      <div className="flex justify-between items-center gap-4 ">
+                    <div className="flex flex-col gap-3 ">
+                      <div className="flex justify-between items-center gap-4 flex-col md:flex-row">
                         <input
                           type="text"
                           placeholder="Input label *"
@@ -149,7 +152,7 @@ const Body = () => {
                   Payments with Tickete are secure and encrypted.
                 </p>
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 ">
                 <div className="flex flex-col gap-7 border border-black py-3 px-3 rounded-2xl">
                   <div className="flex justify-between items-center">
                     <div className="flex items-center justify-between gap-3">
@@ -167,8 +170,8 @@ const Body = () => {
                   </div>
                   <div className=" flex flex-col gap-10">
                     <form>
-                      <div className="flex flex-col gap-3">
-                        <div className="flex justify-between items-center gap-4">
+                      <div className="flex flex-col gap-4">
+                        <div className="flex md:flex-row flex-col gap-4 ">
                           <input
                             type="text"
                             placeholder="Name on card *"
@@ -181,7 +184,7 @@ const Body = () => {
                             className="border py-3 px-3 rounded-2xl w-full"
                           />
                         </div>
-                        <div className="flex justify-between items-center gap-4 ">
+                        <div className="flex md:flex-row flex-col gap-4">
                           <input
                             type="text"
                             placeholder="Expiry date *"
@@ -293,7 +296,9 @@ const Body = () => {
             <hr></hr>
           </div>
         </div>
-        <div className="col-span-5 border">2</div>
+        <div className="col-span-4 ">
+          <SideBar />
+        </div>
       </div>
     </div>
   );

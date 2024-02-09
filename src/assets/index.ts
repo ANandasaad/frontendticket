@@ -6,3 +6,4 @@ export { default as visa } from "./visa.png";
 export { default as apple } from "./Vector.png";
 export { default as google } from "./google-pay-mono.png";
 export { default as illustrations } from "./About illustrations.png";
+export { default as rectangle } from "./Rectangle 65.png";

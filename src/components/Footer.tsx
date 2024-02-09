@@ -3,7 +3,7 @@ import { logo, logo1 } from "../assets";
 
 const Footer = () => {
   return (
-    <div className=" bg-black">
+    <div className=" bg-black pb-4">
       <div className="public-container">
         <div className="pt-32 pb-10">
           <div>
@@ -12,17 +12,34 @@ const Footer = () => {
         </div>
         <div></div>
       </div>
-      <div className="bg-black">
-        <div className="public-container text-white flex items-center gap-4 py-4 px-3 font-thin">
-          <p>Made with ❤️</p>
-          <p>•</p>
-          <p>Privacy policy</p>
-          <p>•</p>
-          <p>Terms of usage</p>
-          <p>•</p>
-          <p>Cancellation policy</p>
-          <p>•</p>
-          <p>Sitemap</p>
+      <div className="bg-black ">
+        <div className="public-container text-white flex flex-col-reverse md:flex-row gap-4 ">
+          <p className=" text-sm md:text-xl font-light">Made with ❤️</p>
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+            <div className="flex gap-1">
+              <span>•</span>
+              <span className=" text-sm md:text-xl font-light">
+                Privacy policy
+              </span>
+            </div>
+            <div className="flex gap-1">
+              <span>•</span>
+              <span className=" text-sm md:text-xl font-light">
+                {" "}
+                Terms of usage
+              </span>
+            </div>
+            <div className="flex gap-1">
+              <span>•</span>
+              <span className=" text-sm md:text-xl font-light">
+                Cancellation policy
+              </span>
+            </div>
+            <div className="flex gap-1">
+              <span>•</span>
+              <span className=" text-sm md:text-xl font-light">Sitemap</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
