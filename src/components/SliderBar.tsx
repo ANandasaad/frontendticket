@@ -1,38 +1,80 @@
-import React from "react";
-import Slider from "react-slick";
+import React, { useState } from "react";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
-function SliderBar() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-  return (
-    <div className="slider-container border ">
-      <Slider {...settings}>
-        <div>
-          <h3>Hello</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
-    </div>
-  );
+import { GoDotFill } from "react-icons/go";
+
+interface Slide {
+  src: string;
+  alt: string;
 }
 
-export default SliderBar;
+interface CarouselData {
+  slides: Slide[];
+}
+export const Carousel = ({ data }: any) => {
+  const [slide, setSlide] = useState(0);
+
+  const nextSlide = () => {
+    setSlide(slide === data.length - 1 ? 0 : slide + 1);
+  };
+
+  const prevSlide = () => {
+    setSlide(slide === 0 ? data.length - 1 : slide - 1);
+  };
+
+  return (
+    <div className=" relative flex justify-center items-center w-600 h-400 bg-white">
+      <FaChevronLeft
+        onClick={prevSlide}
+        className=" absolute left-1 bg-gray-50 opacity-55 text-2xl rounded-full font-thin"
+      />
+      {data.map(
+        (
+          item: { src: string | undefined; alt: string | undefined },
+          idx: React.Key | null
+        ) => {
+          return (
+            <img
+              src={item.src}
+              alt={item.alt}
+              key={idx}
+              className={
+                slide === idx
+                  ? "w-[600px] h-[300px] rounded-md shadow-md"
+                  : "slide hidden"
+              }
+            />
+          );
+        }
+      )}
+      <FaChevronRight
+        onClick={nextSlide}
+        className=" absolute right-1  bg-gray-50 opacity-55 text-2xl rounded-full font-thin"
+      />
+      <span className="absolute bottom-1">
+        {data.map((_: any, idx: any) => {
+          let buttonSizeClass = "w-2 h-2"; // Default button size class
+
+          // Check if it's the first or last button
+          if (idx === 0 || idx === data.length - 1) {
+            buttonSizeClass = "w-1 h-1"; // If first or last, set to 1px size
+          }
+
+          return (
+            <button
+              key={idx}
+              className={`${
+                slide === idx
+                  ? "bg-white w-5 h-2  shadow-md m-1 transition-all duration-700 ease-out"
+                  : "bg-gray-400 h-2 shadow-md m-1"
+              } ${buttonSizeClass} rounded-full`}
+              onClick={() => setSlide(idx)}
+            ></button>
+          );
+        })}
+      </span>
+    </div>
+  );
+};

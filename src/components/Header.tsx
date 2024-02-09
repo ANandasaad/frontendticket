@@ -1,4 +1,3 @@
-import React from "react";
 import { IoMdLock } from "react-icons/io";
 import { FaRegCircleQuestion } from "react-icons/fa6";
 import { logo } from "../assets";

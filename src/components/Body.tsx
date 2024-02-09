@@ -1,6 +1,5 @@
-import React from "react";
 import { IoIosInformationCircle } from "react-icons/io";
-import { BiWorld } from "react-icons/bi";
+
 import { CiCreditCard1 } from "react-icons/ci";
 import { ImRadioChecked2 } from "react-icons/im";
 import { apple, dinerclub, google, mastercard, visa } from "../assets";

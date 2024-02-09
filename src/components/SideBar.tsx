@@ -9,7 +9,9 @@ import { GoPlus } from "react-icons/go";
 import { CiCircleInfo } from "react-icons/ci";
 import { FaPiggyBank } from "react-icons/fa6";
 import { IoMdLock } from "react-icons/io";
-import SliderBar from "./SliderBar";
+import { Carousel } from "./SliderBar";
+
+import { data } from "../utils/silder.data.utils";
 const SideBar = () => {
   return (
     <section className="">
@@ -20,9 +22,9 @@ const SideBar = () => {
         <div className="py-4 px-4">
           <div className="flex flex-col gap-2">
             <div className="flex flex-col gap-4">
-              <div>
-                <img src={rectangle} alt="gallery" />
-                {/* <SliderBar /> */}
+              <div className="">
+                {/* <img src={rectangle} alt="gallery" /> */}
+                <Carousel data={data.slides} />
               </div>
               <div className="flex flex-col gap-5">
                 <div className="flex-col gap-3">
